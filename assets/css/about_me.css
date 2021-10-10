@@ -5,6 +5,7 @@
 
 .about-me_container_photo {
     margin-left: 4em;
+    border-radius: 100%;
 }
 
 .about-me_photo {
@@ -45,7 +46,7 @@
         text-align: center;
     }
 
-    .about-me_photo {
+    .about-me_container_photo {
         margin: 0 0 2em;
     }
 }
