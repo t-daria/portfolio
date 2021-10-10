@@ -1,0 +1,44 @@
+.footer {
+    padding: 5em;
+}
+
+.footer_heading {
+    font-weight: 300;
+}
+
+.social-links {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -.75em;
+    margin-bottom: 2em;
+}
+
+.social-links > * {
+    margin-top: .75em;
+}
+
+.social-links_item {
+    display: inline-block;
+    margin-right: .75em;
+}
+
+.social-links_item:last-child {
+    margin-right: 0;
+}
+
+.social-links_label {
+    display: none;
+}
+
+@media (max-width: 980px) {
+    .footer {
+        padding: 3em;
+        position: relative;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer {
+        padding: 2em;
+    }
+}

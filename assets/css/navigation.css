@@ -1,0 +1,134 @@
+.nav {
+    background-color: var(--navigation-background-color);
+    border-top-left-radius: .25em;
+    border-top-right-radius: .25em;
+    max-width: 64em;
+    padding: .6em 6em;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.nav_menu-button {
+    display: none;
+    z-index: 1;
+}
+
+.nav_menu-toggle {
+    display: none;
+}
+
+.nav-list {
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    justify-content: space-around;
+    overflow: inherit;
+}
+
+.nav-list_link {
+    border-radius: 8px;
+    color: var(--link-color);
+    display: inline-block;
+    padding: .5em 1.25em;
+    text-decoration: none;
+}
+
+.nav-list_link:hover {
+    background-color: var(--navigation-link-bg-color);
+}
+
+@media (max-width: 1200px) {
+    .nav {
+        padding: .6em 2em;
+    }
+}
+
+@media (max-width: 980px) {
+    .nav {
+        padding: .6em .9em;
+    }
+}
+
+@media (max-width: 736px) {
+    .nav {
+        background-color: var(--mobile-navigation-bg-color);
+        left: 0;
+        margin: 0;
+        min-height: 3.2em;
+        order: -1;
+        padding: 0;
+        position: fixed;
+        top: 0;
+    }
+      
+    .nav-list {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        height: 0;
+        overflow: hidden;
+        text-align: center;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .nav_menu-button {
+        border: 0;
+        border-top: 3px solid #fff;
+        display: block;
+        height: 30px;
+        outline: none;
+        position: absolute;
+        right: 20px;
+        top: 15px;
+        transition: transform 0.3s linear;
+        width: 30px;
+    }
+      
+    .nav_menu-button::before,
+    .nav_menu-button::after {
+        border-top: 3px solid #fff;
+        content: "";
+        left: 0;
+        position: absolute;
+        top: 0;
+        transform: translateY(6px);
+        width: 100%;
+    }
+      
+    .nav_menu-button::after {
+        transform: translateY(15px);
+        transition: transform 0.3s linear;
+    }
+
+    .nav_menu-toggle:checked ~ ul {
+        height: 28em;
+        padding-top: 3em
+    }
+      
+    .nav_menu-toggle:checked + .nav_menu-button {
+        border: none;
+        transform: rotate(45deg) translateY(5px);
+    }
+      
+    .nav_menu-toggle:checked + .nav_menu-button::after {
+        transform: rotate(-90deg) translateX(-6px);
+    }
+
+    .nav-list_item {
+        align-items: center;
+        display: flex;
+        line-height: 4em;
+        min-height: 4em;
+    }
+
+    .nav-list_link {
+        color: #fff;
+        width: 100%;
+    }
+
+    .nav-list_link:hover {
+        background-color: transparent;
+        color: var(--mobile-navigation-link-hover-color);
+    }
+}

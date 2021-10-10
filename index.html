@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Daria Torz" />
+    <meta
+      name="description"
+      content="Hi! I'm Daria Torz and this the page is about me."
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+
+    <title>Daria Torz | Portfolio</title>
+
+    <link
+      rel="apple-touch-icon"
+      type="image/png"
+      sizes="180x180"
+      href="./assets/images/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/images/favicon-16x16.png"
+    />
+
+    <link rel="stylesheet" href="./assets/icons/fontawesome/css/all.css" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <img 
+        src="./assets/images/page_banner.svg" 
+        alt="Page banner"
+        class="page_banner"
+      />
+
+      <header class="header">
+        <a class="header_logo" href="/">
+          <img
+            src="./assets/images/logo.svg"
+            alt="Logo of the page."
+            width="85"
+            height="85"
+          />
+        </a>
+        <h1 class="header_title">Daria Torz</h1>
+        <p class="header_subtitle">Junior Data Scientist</p>
+      </header>
+
+      <nav class="nav">
+        <input type="checkbox" id="menu-toggle" class="nav_menu-toggle" />
+        <label class="nav_menu-button" for="menu-toggle"></label>
+
+        <ul class="nav-list">
+          <li class="nav-list_item">
+            <a class="nav-list_link" href="#about-me">About me</a>
+          </li>
+          <li class="nav-list_item">
+            <a class="nav-list_link" href="#experience">Experience</a>
+          </li>
+          <li class="nav-list_item">
+            <a class="nav-list_link" href="#education">Education</a>
+          </li>
+          <li class="nav-list_item">
+            <a class="nav-list_link" href="#certifications">Certifications</a>
+          </li>
+          <li class="nav-list_item">
+            <a class="nav-list_link" href="#projects">Projects</a>
+          </li>
+        </ul>
+      </nav>
+
+      <main>
+        <div class="main-content-wrapper">
+          <section id="about-me" class="about-me content-section">
+            <div>
+              <header
+                class="content-section_header"
+              >
+                <h2>About me</h2>
+              </header>
+              <p class="about-me_description">
+                Hi, I am Daria. I am a graduate of the Warsaw School of
+                Economics with extensive knowledge in advanced data analysis and
+                process modeling using artificial intelligence, machine learning
+                and deep learning methods.
+              </p>
+            </div>
+            <div class="about-me_container_photo">
+              <img
+              class="about-me_photo"
+              src="./assets/images/me.svg"
+              alt="My photo."
+              />
+              <img
+              class="about-me_welcome"
+              src="./assets/images/welcome.svg"
+              alt="My photo."
+              />
+            </div>
+          </section>
+
+          <section id="experience" class="experience content-section">
+            <header class="content-section_header">
+              <h2>Experience</h2>
+            </header>
+
+            <ul class="timeline">
+              <li class="timeline_item">
+                <time class="timeline_time" title="11/2020 - 04/2021"
+                  >11/2020 - 04/2021</time
+                >
+                <div>
+                  <h3 class="experience_heading">CodersCamp</h3>
+                  <p>Web development course</p>
+                  <p>
+                    Working in a group of 6 under the supervision of a mentor
+                    during the sixth edition of CodersCamp
+                  </p>
+                  <ul class="timeline_description">
+                    <li>
+                      gaining theoretical and practical knowledge about creating simple 
+                      websites and complex web applications
+                    </li>
+                    <li>remote teamwork and project management</li>
+                  </ul>
+                </div>
+              </li>
+              <li class="timeline_item">
+                <time class="timeline_time" title="17/07 - 07/08/2018"
+                  >17/07 - 07/08/2018</time
+                >
+                <div>
+                  <h3 class="experience_heading">
+                    Office of Tax Advisor Janina Michałowska-Szulc
+                  </h3>
+                  <p>Practice</p>
+                  <ul class="timeline_description">
+                    <li>
+                      the practical operation of commercial and service
+                      enterprises
+                    </li>
+                    <li>
+                      preparation of balance sheets, profit and loss accounts
+                    </li>
+                    <li>registration and preparation of documents</li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </section>
+
+          <section id="education" class="education content-section">
+            <header class="content-section_header">
+              <h2>Education</h2>
+            </header>
+
+            <ul class="timeline">
+              <li class="timeline_item">
+                <time class="timeline_time" title="10/2019 - 08/2021"
+                  >10/2019 - 08/2021</time
+                >
+                <div>
+                  <h3 class="education_heading">Warsaw School of Economics</h3>
+                  <p>Advanced Analytics – Big Data</p>
+                </div>
+              </li>
+              <li class="timeline_item">
+                <time class="timeline_time" title="10/2016 - 06/2019"
+                  >10/2016 - 06/2019</time
+                >
+                <div>
+                  <h3 class="education_heading">
+                    Wroclaw University of Economics and Business
+                  </h3>
+                  <p>Finance and Accounting</p>
+                </div>
+              </li>
+            </ul>
+          </section>
+
+          <section id="certifications" class="certifications content-section">
+            <header class="content-section_header">
+              <h2>Certifications</h2>
+            </header>
+
+            <ul class="certifications-list">
+              <li class="certifications-list_item">
+                <img
+                  class="SAS_photo"
+                  src="./assets/images/sas_certification_badge_image.png"
+                  alt="Data Scientist with SAS System."
+                />
+                <p>
+                  Data Scientist with SAS System<br />
+                  Issued: 08/2021
+                </p>
+              </li>
+              <li class="certifications-list_item">
+                <img
+                  class="CodersCamp_photo"
+                  src="./assets/images/coders_camp.png"
+                  alt="CodersCamp - Web development course."
+                />
+                <p>
+                  CodersCamp - Web development course<br />
+                  CertificateID: CC012021W063<br />
+                  Issued: 04/2021
+                </p>
+              </li>
+              <li class="certifications-list_item">
+                <img
+                  class="Cognity_photo"
+                  src="./assets/images/cognity.png"
+                  alt="Training in Microsoft Office Excel."
+                />
+                <p>
+                  Training in Microsoft Office Excel on the intermediate level,
+                  organized by Cognity<br />
+                  CertificateID: 35944/2019<br />
+                  Issued: 01/2019
+                </p>
+              </li>
+            </ul>
+          </section>
+
+          <section id="projects" class="projects content-section">
+            <header class="content-section_header">
+              <h2>Projects</h2>
+            </header>
+
+            <ul class="projects-list">
+              <li class="projects-list_item project">
+                <img
+                  class="project_photo"
+                  src="./assets/images/furry_tales_shelter.svg"
+                  alt=""
+                />
+                <div class="project_description">
+                  <h3>Furry Tales Shelter</h3>
+                  <p>
+                    Website and shelter management system. Automates all adoption processes from searching for a pet to arranging an adoption visit.
+                  </p>
+                  <h4 class="project_technologies-heading">Technologies</h4>
+                  <p>
+                    React, GSAP 3, React Spring, Material UI, Styled Components, Fetch API, React Testing Library/Mock Service WorkerMateria, Node.js, Express.js, Atlas MongoDB, Mongoose, Jest/supertest
+                  </p>
+                  <div class="project_button">
+                    <a
+                      class="project_button_item"
+                      href="https://github.com/piotr-bocian/Projekt-5"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <i class="fab fa-github"></i>
+                      View code
+                    </a>
+                    <a
+                    class="project_button_item"
+                    href="https://furry-tales-shelter.netlify.app"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >
+                      <i class="fas fa-desktop"></i>
+                      Open the app
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li class="projects-list_item project">
+                <img
+                  class="project_photo"
+                  src="./assets/images/codersChess.svg"
+                  alt=""
+                />
+                <div class="project_description">
+                  <h3>CodersChess</h3>
+                  <p>
+                    Virtual chess in accordance with the visual identity of the CodersCrew association. Allows to play different lengths of games between two players, as well as choose the language version of the game, the players' names/nicks, a stalemate situation - as the stalemate winner or the stalemated.
+                  </p>
+                  <h4 class="project_technologies-heading">Technologies</h4>
+                  <p>
+                    TypeScript, JavaScript, CSS, Webpack
+                  </p>
+                  <div class="project_button">
+                    <a
+                      class="project_button_item"
+                      href="https://github.com/piotr-bocian/Projekt3-chess/tree/final-css"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <i class="fab fa-github"></i>
+                      View code
+                    </a>
+                    <a
+                    class="project_button_item"
+                    href="https://piotr-bocian.github.io/Projekt3-chess/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >
+                      <i class="fas fa-desktop"></i>
+                      Open the app
+                    </a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </section>
+
+        </div>
+      </main>
+
+      <footer class="footer">
+        <section>
+          <h2 class="footer_heading">You can find me here</h2>
+          <ul class="social-links">
+            <li class="social-links_item">
+              <a
+                class="icon fab fa-facebook-f"
+                href="https://www.facebook.com/daria.torz.1"
+                title="Facebook"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span class="social-links_label">Facebook</span>
+              </a>
+            </li>
+            <li class="social-links_item">
+              <a
+                class="icon fab fa-github"
+                href="https://github.com/t-daria"
+                title="GitHub"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span class="social-links_label">GitHub</span>
+              </a>
+            </li>
+            <li class="social-links_item">
+              <a
+                class="icon fab fa-linkedin-in"
+                href="https://www.linkedin.com/in/daria-torz/"
+                title="LinkedIn"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span class="social-links_label">LinkedIn</span>
+              </a>
+            </li>
+          </ul>
+        </section>
+      </footer>
+    </div>
+  </body>
+</html>
